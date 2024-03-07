@@ -1,5 +1,5 @@
 # MAR Teaching Resources Business Website
-#### Video Demo:  <URL HERE>
+#### Video Demo:  <https://youtu.be/BgDHBlEyg9g>
 #### Description:
 
 This is a website created to display the teaching resources of my old Russian teacher and her business partner. For a year, they have been simply sending interested customers pdf copies of the covers of each of their products on offer. This was time-consuming, not customer-friendly, unorganized, and unappealing. To boost their customer retention and viewership to purchase ratio, I decided to take some stress off her by developing a website to store all of these resources, free of charge.
