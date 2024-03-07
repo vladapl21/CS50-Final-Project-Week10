@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+  height: 80px;
+  background: #D53C2C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 1.5rem;
+}
+
+nav a:hover {
+  color: #005773;
+}
+
+.hero {
+  background-image: url(images/IMG_0734.jpg); /* Replace with your image path */
+  background-repeat: no-repeat; /* Prevent tiling if image is smaller than body */
+  background-size: cover; /* Resize image to cover the entire body element */
+  background-position: center; /* Center the image horizontally and vertically */
+  /* background: #044C86; */
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: calc((100vw - 1300px) / 2) 1fr 0.85fr;  /* Define left padding, two equal columns */
+  height: 95vh;
+  /*padding: 0rem calc((100vw - 1300px) / 2);*/
+}
+
+.hero-testimonial {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 95vh;
+  padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  padding: 0rem 2rem;
+}
+
+.column-testimonial {
+  display: flex;
+  flex-direction: column;
+  background-color: #005773;
+  margin-top: 0rem;
+  align-items: flex-start;
+  color: #fff;
+  padding: 0rem 2rem;
+}
+
+.hero-pricing {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 95vh;
+  padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.column-pricing {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0rem;
+  align-items: flex-start;
+  color: #fff;
+  padding: 0rem 2rem;
+}
+
+.column-left h1 {
+  margin-bottom: 1rem;
+  font-size: 2.7rem;
+}
+
+.column-testimonial h1 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.column-right h1 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.column-left p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+button {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border: none;
+  color: #000;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+/*.container button {
+    padding: 0.2rem 2rem;
+    font-size: 0.5rem;
+    border: none;
+    color: #000;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+  }*/
+
+button:hover {
+  background: #D53C2C;
+  color: #fff;
+}
+
+.column-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0rem 2rem;
+
+}
+
+.hero-image {
+  width: 7%;
+  height: 60%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-image {
+  width: 85%;
+  height: 40%;
+}
+
+.pricing-image {
+  width: 70%;
+  height: 35%;
+}
+
+.removed-break {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+  .hero-pricing {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile device capabilities */
+@media (max-width: 900px) {
+  .hero-image {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .column-left h1 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .column-right {
+    margin-top: 1.5rem;
+    justify-content: normal;
+  }
+  
+  .column-testimonial h1 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .column-right h1 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  .removed-break {
+    display: none;
+  }
+
+  button {
+    padding: 0.8rem 1.6rem;
+    margin-left: 0.6rem;
+    font-size: 0.8rem;
+    border: none;
+    color: #000;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+
+  .right-image {
+    width: 90%;
+    height: 45%;
+  }
+
+  .pricing-image {
+    display: none;
+  }
+  
+  main {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+  }
+
+  .mobile h1 {
+    margin-top: 5rem;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .removed-heading {
+    display: none;
+  }
+
+  nav {
+    height: 15vh;
+    background: #D53C2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1rem;
+  }
+
+  }
