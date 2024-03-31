@@ -43,3 +43,5 @@ Adjustments on pricing.html:
 - <img src="images/pricing-mobile.png" width="300" height="630">
 
 Surprisingly, no adjustments for testimonials.html were needed.
+
+_- *Used as CS50x final project.*_
